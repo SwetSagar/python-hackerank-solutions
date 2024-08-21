@@ -1,0 +1,105 @@
+# Strings
+
+## sWAP cASE
+
+```
+
+def swap_case(s):
+    xlist = list(s)
+    holder_list = []
+    for item in xlist :
+        if item.isupper() == True :
+            holder_list.append(item.lower())
+        else :
+            holder_list.append(item.upper())            
+    return ''.join(holder_list)
+
+
+```
+
+## String Split and Join
+
+```
+
+def split_and_join(line):
+    # write your code here
+    x = line.split()
+    return '-'.join(x)
+
+
+```
+
+## What's Your Name?
+
+
+```
+
+def print_full_name(first, last):
+    print(f'Hello {first} {last}! You just delved into python.')
+
+```
+
+## Mutations
+
+```
+
+def mutate_string(string, position, character):
+    return string[0:position] + character + string[position+1:]
+
+```
+
+## Find a string
+
+```
+
+def count_substring(string, sub_string):
+    count = 0
+    for i in range(len(string)):
+        if sub_string == string[i:i+len(sub_string)]:
+            count += 1
+    return count
+
+```
+
+## Text Alignment
+
+```
+
+#Replace all ______ with rjust, ljust or center. 
+
+thickness = int(input()) #This must be an odd number
+c = 'H'
+
+#Top Cone
+for i in range(thickness):
+    print((c*i).rjust(thickness-1)+c+(c*i).ljust(thickness-1))
+
+#Top Pillars
+for i in range(thickness+1):
+    print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))
+
+#Middle Belt
+for i in range((thickness+1)//2):
+    print((c*thickness*5).center(thickness*6))    
+
+#Bottom Pillars
+for i in range(thickness+1):
+    print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))    
+
+#Bottom Cone
+for i in range(thickness):
+    print(((c*(thickness-i-1)).rjust(thickness)+c+(c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6))
+
+
+```
+
+## Text Wrap
+
+```
+
+def wrap(string, max_width):
+    word_list = textwrap.wrap(string, width=max_width)
+    word_wrap = '\n'.join(word_list)
+    return  word_wrap
+
+```
