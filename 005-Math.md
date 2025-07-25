@@ -46,3 +46,27 @@ d = int(input())
 print(pow(a,b)+pow(c,d))
 
 ```
+
+
+## Find angle MBC 
+
+```
+
+- [ ] #todo
+
+```
+
+## Triangle Quest 
+
+```
+- [ ] #todo
+```
+
+
+## Triangle Quest 2
+
+```
+- [ ] #todo
+```
+
+
