@@ -216,25 +216,3 @@ else :
     print('True')
 
 ```
-
-## Find angle MBC 
-
-```
-
-- [ ] #todo
-
-```
-
-## Triangle Quest 
-
-```
-
-```
-
-
-## Triangle Quest 2
-
-```
-
-```
-
