@@ -181,3 +181,60 @@ print(sum(set_A))
 
 ```
 
+## Check Subset
+
+```
+
+T = int(input())
+
+for _ in range(T):
+    elements_A = int(input())
+    A = set(input().split())
+    elements_B = int(input())
+    B = set(input().split())
+    if A.issubset(B) : 
+        print('True')
+    else :
+        print('False')
+
+```
+
+
+## Check Strict Superset
+
+
+```
+
+A = set(input().split())
+n = int(input())
+for _ in range(n):
+    B = set(input().split())
+    if not(A.issuperset(B) and len(A) > len(B)) :
+        print('False')
+        break
+else :
+    print('True')
+
+```
+
+## Find angle MBC 
+
+```
+
+- [ ] #todo
+
+```
+
+## Triangle Quest 
+
+```
+
+```
+
+
+## Triangle Quest 2
+
+```
+
+```
+
